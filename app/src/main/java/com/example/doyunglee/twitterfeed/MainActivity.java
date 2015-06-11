@@ -2,40 +2,18 @@ package com.example.doyunglee.twitterfeed;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.twitter.sdk.android.Twitter;
-import com.twitter.sdk.android.core.TwitterAuthConfig;
-import com.twitter.sdk.android.tweetui.SearchTimeline;
-import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
-import com.twitter.sdk.android.tweetui.UserTimeline;
 
-import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends ListActivity {
-
-    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    private static final String TWITTER_KEY = "HwiPDI5bhNA41rUpCwkG6lBBw";
-    private static final String TWITTER_SECRET = "P4Fwf7WtTbxs5W3sdKLBPZiUaHcZAKPDHOJZnSsOWl5fjDkSaB";
-
     static final String LOG_TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
-        Fabric.with(this, new Twitter(authConfig));
 
-        final SearchTimeline searchTimeline = new SearchTimeline.Builder()
-                .query("#bird")
-                .build();
-        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(this,
-                searchTimeline);
-        setListAdapter(adapter);
 
         //check logged in status
         if(!userLoggedIn()){
