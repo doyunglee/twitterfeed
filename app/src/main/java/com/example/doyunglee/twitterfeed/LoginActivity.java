@@ -38,13 +38,14 @@ public class LoginActivity extends Activity {
                 // Do something with result, which provides a TwitterSession for making API calls
                 startMainActivity();
             }
-
             @Override
             public void failure(TwitterException exception) {
                 // Do something on failure
             }
         });
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
