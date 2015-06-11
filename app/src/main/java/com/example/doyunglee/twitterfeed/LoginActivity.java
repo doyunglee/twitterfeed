@@ -31,34 +31,19 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        final Button login_button = (Button) findViewById(R.id.login_button);
-//        final EditText username_text = (EditText) findViewById(R.id.username);
-//        final EditText password_text = (EditText) findViewById(R.id.password);
-
         loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
         loginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
                 // Do something with result, which provides a TwitterSession for making API calls
-                Log.i(LOG_TAG, "SUCCESS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 startMainActivity();
             }
 
             @Override
             public void failure(TwitterException exception) {
                 // Do something on failure
-                Log.i(LOG_TAG, "FAILURE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             }
         });
-
-//        login_button.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                // Perform action on click
-//                Log.i(LOG_TAG, username_text.getText().toString());
-//                Log.i(LOG_TAG, password_text.getText().toString());
-//            }
-//        });
-
     }
 
     @Override
@@ -69,8 +54,8 @@ public class LoginActivity extends Activity {
 
     //Open Main Activity
     public void startMainActivity(){
-
         Intent startMainIntent = new Intent(this, MainActivity.class);
+        startMainIntent.putExtra("LOGGED_IN", true);
         startActivity(startMainIntent);
     }
 }

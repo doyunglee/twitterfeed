@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
         Log.i(LOG_TAG, "We in the MainActivity");
+
         //check logged in status
         if(!userLoggedIn()){
             Log.i(LOG_TAG, "userLoggedIn() if statement we are in.");
@@ -34,6 +35,19 @@ public class MainActivity extends AppCompatActivity {
             startLoginActivity();
             return;
         }
+    }
+
+    //Check if the user has been checked-in or not
+    public boolean userLoggedIn(){
+        //the default status is false.
+        boolean status = getIntent().getBooleanExtra("LOGGED_IN", false);
+        return status;
+    }
+
+    //Open Login Activity
+    public void startLoginActivity(){
+        Intent startLoginIntent = new Intent(this, LoginActivity.class);
+        startActivity(startLoginIntent);
     }
 
     @Override
@@ -54,19 +68,6 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
-    }
-
-    //Check if the user has been checked-in or not
-    public boolean userLoggedIn(){
-        boolean status = false; //false = not logged in
-        return status;
-    }
-
-    //Open Login Activity
-    public void startLoginActivity(){
-        Intent startLoginIntent = new Intent(this, LoginActivity.class);
-        startActivity(startLoginIntent);
     }
 }

@@ -2,81 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/0.7.4/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="0ef9ee190067306951dbd33bd588077d05ac65f6">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-90f62728396fe584dd004ea5c867f4056895b261.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.twitter.cobalt/performance-metrics/0.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="39a316349636281051561b9abb23fdd6a2b17061">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-e07cc4e494040a6fc9bd0fcda23cd0600f15af6c.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.5.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="27d9ba204291d889f4f0fe10d1343a2710e463d4">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-4f2769f8591e31d0ddf17b64195f66ceaaad6723.jar" />
-    </item>
-    <item
         jar="/Users/doyunglee/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
         sha1="a60a5e993c98c864010053cb901b7eab25306568">
         <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/gson-2.2.4-cf76c3feb65ce03f0e23daf3768a421786ac7b1a.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.4/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="b4a61385d2b7a751540d97d28090e322704f9f1f">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-c47985190748848bb9cd27c8f7e5b814809fd7b5.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-42aea6d33613b914f5c93096f36a9752a8b4b382.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-505c3d1500fdce4c43a40f6af74edf3c96450a0e.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-8abbb9c52878181c4aedb710e4dbfaa303492261.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="ebab461c13eee9e56cb687a0d89ff38a6249ccbd">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-296f4500c0cbbd534deec845b2470f8f670faca6.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="62753ea30b9fd44e248c50952a36c4b6a4b3eb73">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-b6bb57d6091b44659c15900f872240506d2c6d36.jar" />
-    </item>
-    <item
-        jar="/Users/doyunglee/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-649559009536cd0e93c7e5af468068b6582f500c.jar" />
     </item>
     <item
         jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
@@ -98,6 +28,76 @@
         revision="23.0.0 rc2"
         sha1="efb0a36546aa8857ab8df358b106c1817e03cbee">
         <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/retrofit-1.6.1-d5ddec8c885f4faaa0dbbd875dc1063831485ea3.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/0.7.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="0ef9ee190067306951dbd33bd588077d05ac65f6">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-90f62728396fe584dd004ea5c867f4056895b261.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-42aea6d33613b914f5c93096f36a9752a8b4b382.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-505c3d1500fdce4c43a40f6af74edf3c96450a0e.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.twitter.cobalt/performance-metrics/0.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="39a316349636281051561b9abb23fdd6a2b17061">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-e07cc4e494040a6fc9bd0fcda23cd0600f15af6c.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-649559009536cd0e93c7e5af468068b6582f500c.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="ebab461c13eee9e56cb687a0d89ff38a6249ccbd">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-296f4500c0cbbd534deec845b2470f8f670faca6.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="27d9ba204291d889f4f0fe10d1343a2710e463d4">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-4f2769f8591e31d0ddf17b64195f66ceaaad6723.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="62753ea30b9fd44e248c50952a36c4b6a4b3eb73">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-b6bb57d6091b44659c15900f872240506d2c6d36.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-8abbb9c52878181c4aedb710e4dbfaa303492261.jar" />
+    </item>
+    <item
+        jar="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="b4a61385d2b7a751540d97d28090e322704f9f1f">
+        <dex dex="/Users/doyunglee/Documents/twitterfeed/app/build/intermediates/pre-dexed/debug/classes-c47985190748848bb9cd27c8f7e5b814809fd7b5.jar" />
     </item>
 
 </items>
