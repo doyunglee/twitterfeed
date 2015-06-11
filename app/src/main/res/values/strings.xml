@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">twitterfeed</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- Login Activity-->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="username_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+
+</resources>
