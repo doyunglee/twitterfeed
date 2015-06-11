@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+import com.twitter.sdk.android.tweetui.SearchTimeline;
 import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
 import com.twitter.sdk.android.tweetui.UserTimeline;
 
@@ -29,10 +30,11 @@ public class MainActivity extends ListActivity {
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
 
-        final UserTimeline userTimeline = new UserTimeline.Builder()
-                .screenName("fabric")
+        final SearchTimeline searchTimeline = new SearchTimeline.Builder()
+                .query("#bird")
                 .build();
-        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(this, userTimeline);
+        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(this,
+                searchTimeline);
         setListAdapter(adapter);
 
         //check logged in status
