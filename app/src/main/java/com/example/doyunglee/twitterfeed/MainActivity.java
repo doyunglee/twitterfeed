@@ -2,24 +2,30 @@ package com.example.doyunglee.twitterfeed;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.widget.TextView;
 
 public class MainActivity extends ListActivity {
     static final String LOG_TAG = MainActivity.class.getSimpleName();
+    private static final String API_URL = "http://freemusicarchive.org/api";
+    private static final String API_KEY = "-------";
+    TextView textView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         //check logged in status
         if(!userLoggedIn()){
             finish();
             startLoginActivity();
         }
+
+        textView = (TextView) findViewById(R.id.textView);
+
     }
 
     //Check if the user has been checked-in or not
@@ -34,6 +40,7 @@ public class MainActivity extends ListActivity {
         Intent startLoginIntent = new Intent(this, LoginActivity.class);
         startActivity(startLoginIntent);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
