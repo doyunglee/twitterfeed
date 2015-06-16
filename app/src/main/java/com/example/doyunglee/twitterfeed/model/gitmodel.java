@@ -1,7 +1,7 @@
 package com.example.doyunglee.twitterfeed.model;
 
 /**
- * Created by doyunglee on 6/12/15.
+ * Created by doyunglee on 6/15/15.
  */
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -86,7 +86,6 @@ public class gitmodel {
     @Expose
     private String createdAt;
     @SerializedName("updated_at")
-
     @Expose
     private String updatedAt;
 

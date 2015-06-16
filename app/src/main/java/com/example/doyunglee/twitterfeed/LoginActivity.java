@@ -24,33 +24,16 @@ import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 public class LoginActivity extends Activity {
 
     static final String LOG_TAG = LoginActivity.class.getSimpleName();
-    private TwitterLoginButton loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
-        loginButton.setCallback(new Callback<TwitterSession>() {
-            @Override
-            public void success(Result<TwitterSession> result) {
-                // Do something with result, which provides a TwitterSession for making API calls
-                startMainActivity();
-            }
-            @Override
-            public void failure(TwitterException exception) {
-                // Do something on failure
-            }
-        });
     }
-
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        loginButton.onActivityResult(requestCode, resultCode, data);
     }
 
     //Open Main Activity

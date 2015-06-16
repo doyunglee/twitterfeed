@@ -1,65 +1,30 @@
 package com.example.doyunglee.twitterfeed;
 
-import android.app.ListActivity;
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
-import android.os.AsyncTask;
+import android.content.IntentFilter;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.TextView;
+import android.support.v4.content.LocalBroadcastManager;
+import android.util.Log;
+import android.view.View;
+import android.webkit.WebView;
 
-public class MainActivity extends ListActivity {
+
+public class MainActivity extends Activity {
     static final String LOG_TAG = MainActivity.class.getSimpleName();
-    private static final String API_URL = "http://freemusicarchive.org/api";
-    private static final String API_KEY = "-------";
-    TextView textView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //check logged in status
-        if(!userLoggedIn()){
-            finish();
-            startLoginActivity();
-        }
+        setContentView(R.layout.activity_main);
+        WebView browser = (WebView) findViewById(R.id.webview);
 
-        textView = (TextView) findViewById(R.id.textView);
-
+        Log.i(LOG_TAG, "About to start AuthService!!!!");
+        Intent oAuthIntent = new Intent(this, AuthService.class);
+        //msgIntent.putExtra(AuthService.PARAM_IN_MSG, strInputMsg);
+        startService(oAuthIntent);
     }
 
-    //Check if the user has been checked-in or not
-    public boolean userLoggedIn(){
-        //the default status is false.
-        boolean status = getIntent().getBooleanExtra("LOGGED_IN", false);
-        return status;
-    }
-
-    //Open Login Activity
-    public void startLoginActivity(){
-        Intent startLoginIntent = new Intent(this, LoginActivity.class);
-        startActivity(startLoginIntent);
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
